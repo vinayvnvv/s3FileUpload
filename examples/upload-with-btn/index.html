@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>
+S3 auto upload
+</title>
+<script type="text/javascript" src="../../src/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="../../s3src/s3-file-upload.js"></script>
+</head>
+<div ng-app="app" ng-controller="main">
+
+<center><h1>S3 Upload ( with Upload button )</h1></center>
+<hr/>
+
+<h3> 1: Upload </h3>
+
+
+ 				<div 
+                             s3-file-upload="Bucket" 
+                             s3-folder="folder1/folder2" 
+                             s3-access-uri="/api/s3_access.json" 
+                             s3-pre-call="beforeUpload"
+                             s3-error-call="errorUpload"
+                             s3-succes-call="sucessUpload"
+                             s3-auto-upload="false"
+                              >
+                            
+                            <input s3-file-model type="file"/>
+                            <input s3-file-submit type="button" value="Upload">
+                            <s3-progress>( {{s3Status.progressCount}} ) Progressing...</s3-progress>
+                            <s3-success>SuccessFull!!, File Uploaded as '{{s3Status.fileName}}' to {{s3Status.path}}</s3-success>
+                            <s3-error><span style="color:#cc0000">Err Code: {{s3Status.errorCode}}, <br/> Err Msg: {{s3Status.errorMsg}}</span></s3-error>
+               </div>
+
+
+        <hr/>    
+        
+
+ <h3> 2: Upload with Target File Name</h3>
+
+
+                <div 
+                             s3-file-upload="Bucket" 
+                             s3-folder="folder1/folder2" 
+                             s3-access-uri="/api/s3_access.json"  
+                             s3-pre-call="beforeUpload"
+                             s3-error-call="errorUpload"
+                             s3-succes-call="sucessUpload"
+                             s3-auto-upload="false"
+                             s3-target-name="RenamedFile"
+                              >
+                            
+                            <input s3-file-model type="file"/>
+                            <input s3-file-submit type="button" value="Upload">
+                            <s3-progress>( {{s3Status.progressCount}} ) Progressing...</s3-progress>
+                            <s3-success>SuccessFull!!, File Uploaded as '{{s3Status.targetFileName}}' to {{s3Status.path}}</s3-success>
+                            <s3-error><span style="color:#cc0000">Err Code: {{s3Status.errorCode}}, <br/> Err Msg: {{s3Status.errorMsg}}</span></s3-error>
+               </div>
+          
+
+     <hr/>
+
+
+
+  <h3> 3: Upload with dynamic folder and dynamic File Name (By taking inputs values)</h3>
+  
+             Target File Name : <input type="text" ng-model="fileName"/><br/><br/>
+             Folder : <input type="text" ng-model="folder"/><br/><br/>
+ 
+
+                <div 
+                             s3-file-upload="Bucket" 
+                             s3-folder="{{folder}}" 
+                             s3-access-uri="/api/s3_access.json" 
+                             s3-pre-call="beforeUpload"
+                             s3-error-call="errorUpload"
+                             s3-succes-call="sucessUpload"
+                             s3-auto-upload="false"
+                             s3-target-name="{{fileName}}"
+                              >
+                            
+                            <input s3-file-model type="file"/>
+                            <input s3-file-submit type="button" value="Upload">
+                            <s3-progress>( {{s3Status.progressCount}} ) Progressing...</s3-progress>
+                            <s3-success>SuccessFull!!, File Uploaded as '{{s3Status.targetFileName}}' to {{s3Status.path}}</s3-success>
+                            <s3-error><span style="color:#cc0000">Err Code: {{s3Status.errorCode}}, <br/> Err Msg: {{s3Status.errorMsg}}</span></s3-error>
+               </div>    
+
+    <hr/>
+
+</div>
+
+</html>
