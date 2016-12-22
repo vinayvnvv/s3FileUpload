@@ -1,7 +1,15 @@
-s3Fileupload - Upload to S3 using AngularJS
+s3Fileupload - A Light Weight PowerFull ANGULAR Directive For Uploading a File to AMAZON S3 Server.
 ===========
 
 An AngularJS directive that allows you to simply upload files directly to AWS S3.
+
+Features:
+===========
+* Open Source Free Light weight angular directive.
+* Supports Call Back functions by detective the Status of file Upload ( pre-call , success-call , error-call ).
+* Supports Dynamic changes for 'Target File Name' and 'Folder Name' with Angular 2-way Data Binding.
+* Contains Status Block-elements inside directive which has auto Disable and enable for display.
+* s3-upload-options - Provide additional options:
 
 ## Setup
 1. Create AWS S3 bucket
