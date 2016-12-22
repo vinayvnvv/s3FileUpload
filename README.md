@@ -5,11 +5,13 @@ An AngularJS directive that allows you to simply upload files directly to AWS S3
 
 Features:
 ===========
+* Ease of Use But PowerFull Angular Directive.
+* Direct Upload to Amazon S3 Server.
 * Open Source Free Light weight angular directive.
 * Supports Call Back functions by detective the Status of file Upload ( pre-call , success-call , error-call ).
 * Supports Dynamic changes for 'Target File Name' and 'Folder Name' with Angular 2-way Data Binding.
 * Contains Status Block-elements inside directive which has auto Disable and enable for display.
-* s3-upload-options - Provide additional options:
+* Contains Staus Object holds the information of the File uploading along with current upload status.
 
 ## Setup
 1. Create AWS S3 bucket
