@@ -140,7 +140,7 @@ npm and bower direct installation will available from v2.0
   </div>
   ```
 
-## Attributes
+## API and Attributes
 | Name             | value        | description                                         | type     | default     
 | :---------------:|:-----------: | :-----:                                             |  :---:   |  :--:       
 | `s3-file-upload` | bucket name  | Root atrribute to function s3 file upload           | required |  -           
