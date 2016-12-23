@@ -159,20 +159,20 @@ npm and bower direct installation will available from v2.0
 
 ## s3Status Object (contains information of s3 upload)
 ###### members of s3Status object contains status and others inforamation of file upload
-```
-    {
-      success : boolean,
-      error : boolean,
-      uploading : boolean,
-      uploaded : boolean,
-      progressCount : int,
-      path : string,
-      fileName : string,
-      targetFileName : string,
-      file: Object,
-      errorMsg: string,
-      errorCode:string
-    }
+```javascript
+    s3Status = {
+              success : boolean,
+              error : boolean,
+              uploading : boolean,
+              uploaded : boolean,
+              progressCount : int,
+              path : string,
+              fileName : string,
+              targetFileName : string,
+              file: Object,
+              errorMsg: string,
+              errorCode:string
+         }
 
 
 ```
