@@ -161,17 +161,17 @@ npm and bower direct installation will available from v2.0
 ###### members of s3Status object contains status and others inforamation of file upload
 ```json
     {
-      success : false,
-      error : false,
-      uploading : false,
-      uploaded : false,
-      progressCount : 0,
-      path : null,
-      fileName : null,
-      targetFileName : null,
-      file: null,
-      errorMsg: null,
-      errorCode:null
+      success : boolean,
+      error : boolean,
+      uploading : boolean,
+      uploaded : boolean,
+      progressCount : int,
+      path : string,
+      fileName : string,
+      targetFileName : string,
+      file: Object,
+      errorMsg: string,
+      errorCode:string
     }
 
 
