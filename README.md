@@ -140,12 +140,12 @@ npm and bower direct installation will available from v2.0
   </div>
   ```
 
-## Attrubutes
-| Name          | description               | type    | default | comments
-| ------------- |:-------------:            | -----:  |  ---:   |  --:
-| col 3 is      | right-aligned             | $1600   |  true   |  cm2
-| col 2 is      | centered                  |   $12   |  false  |  cm3
-| zebra stripes | are neat                  |    $1   |   true  |  cm4
+## Attributes
+| Name          | value | description               | type    | default | comments
+| :------------- |:-------------:            | :-----:  |  :---:   |  :--: | :--:
+| s3-file-upload| bucket name | Root atrribute to function s3 file upload           | required   |  undefined   |  cm2
+| col 2 is      | centered                  |   $12   |  false  |  cm3 |
+| zebra stripes | are neat                  |    $1   |   true  |  cm4 |
 
 
 
