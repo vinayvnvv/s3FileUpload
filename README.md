@@ -134,9 +134,9 @@ npm and bower direct installation will available from v2.0
      s3-auto-upload="true" >
      <!-- Child elements  -->
        <input s3-file-model type="file"/> <!-- input File Holder -->
-       <s3-progress>( {{s3Status.progressCount}} ) Progressing...</s3-progress> <!-- this block Visible when file is uploading -->
-       <s3-success>SuccessFull!!, File Uploaded as '{{s3Status.fileName}}' to {{s3Status.path}}</s3-success> <!-- this block Visible when file upload is success -->
-       <s3-error>Err Code: {{s3Status.errorCode}}, <br/> Err Msg: {{s3Status.errorMsg}}</s3-error> <!-- this block Visible when error in file upload -->
+       <s3-progress>Progressing...</s3-progress> <!-- this block Visible when file is uploading -->
+       <s3-success>SuccessFull!!</s3-success> <!-- this block Visible when file upload is success -->
+       <s3-error>Error!</s3-error> <!-- this block Visible when error in file upload -->
   </div>
   ```
 
