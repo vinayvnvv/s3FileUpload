@@ -204,6 +204,8 @@ Members of s3Status object contains status and others inforamation of file uploa
 
 
 ## Call Back Functions
+   * call back functions will automatically called to the latest **Angular** scope of the controller.
+   * call back functions should be called without any arguments . ( `s3-success-call="successHandler"` but not like `~~s3-success-call="successHandler()~~"` 
 
 
 ## Themes
