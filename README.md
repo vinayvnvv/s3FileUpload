@@ -151,7 +151,7 @@ npm and bower direct installation will available from v2.0
      s3-pre-call="beforeUpload"
      s3-error-call="errorUpload"
      s3-succes-call="sucessUpload"
-     s3-auto-upload="true" >
+     s3-auto-upload="false" >
      <!-- Child elements  -->
        <input s3-file-model type="file"/> <!-- input File Holder -->
        <input s3-file-submit type="button" value="Upload"> <!-- Button Holds the click event for upload starts -->
