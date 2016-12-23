@@ -190,7 +190,7 @@ Members of s3Status object contains status and others inforamation of file uploa
   * `file` - javascript file Object contains file related inforamtion of the selected file
   * `errMsg` - error message if any error during the file upload
   * `errCode` - error code of the error to handle custom message in call back functions
-    
+      ###### Error Codes Table
       | Error Code | Description
       | ---       | --- 
       |  1        | bucket is undefined
