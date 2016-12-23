@@ -261,14 +261,14 @@ Members of s3Status object contains status and others inforamation of file uploa
       
       };
       
-      / define Success call (function should be defined with scope keyword and with the same name as mentioned in s3-success-call attribute
+      // define Success call (function should be defined with scope keyword and with the same name as mentioned in s3-success-call attribute
       $scope.s3SuccessCall = function(xhr, s3Status) 
 
          console.log(s3Status); // log current s3Status object to browser console
       
       };
       
-      / define Error call (function should be defined with scope keyword and with the same name as mentioned in s3-error-call attribute
+      // define Error call (function should be defined with scope keyword and with the same name as mentioned in s3-error-call attribute
       $scope.s3ErrorCall = function(xhr, s3Status) 
       
          console.log(s3Status); // log current s3Status object to browser console
