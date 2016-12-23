@@ -227,21 +227,23 @@ Members of s3Status object contains status and others inforamation of file uploa
     `app.html`
     
     ```html
-    
-     <div 
-     s3-file-upload="Bucket" 
-     s3-folder="folder1/folder2" 
-     s3-access-uri="/api/s3_access.json" 
-     s3-pre-call="s3PreCall"
-     s3-error-call="s3SuccessCall"
-     s3-succes-call="s3ErrorCall"
-     s3-auto-upload="true" >
-     <!-- Child elements  -->
-       <input s3-file-model type="file"/> <!-- input File Holder -->
-       <s3-progress>Progressing...</s3-progress> <!-- this block Visible when file is uploading -->
-       <s3-success>SuccessFull!!</s3-success> <!-- this block Visible when file upload is success -->
-       <s3-error>Error!</s3-error> <!-- this block Visible when error in file upload -->
-  </div>
+    <body ng-app="myApp" ng-controller="myController">
+         <div 
+         s3-file-upload="Bucket" 
+         s3-folder="folder1/folder2" 
+         s3-access-uri="/api/s3_access.json" 
+         s3-pre-call="s3PreCall"
+         s3-error-call="s3SuccessCall"
+         s3-succes-call="s3ErrorCall"
+         s3-auto-upload="true"
+         s3-target-name="mynewName">
+         <!-- Child elements  -->
+           <input s3-file-model type="file"/> <!-- input File Holder -->
+           <s3-progress>Progressing...</s3-progress> <!-- this block Visible when file is uploading -->
+           <s3-success>SuccessFull!!</s3-success> <!-- this block Visible when file upload is success -->
+           <s3-error>Error!</s3-error> <!-- this block Visible when error in file upload -->
+      </div>
+  </body>
     
     ```
     
