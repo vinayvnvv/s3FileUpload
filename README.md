@@ -157,8 +157,9 @@ npm and bower direct installation will available from v2.0
 
 
 
-## s3Status Object (contains information of s3 upload)
-###### members of s3Status object contains status and others inforamation of file upload
+## s3Status Object (contains information of s3 upload
+Members of s3Status object contains status and others inforamation of file upload provided by the directive and accessible inside the `s3-file-upload` scope.
+
 ```javascript
     s3Status = {
               success : boolean,
