@@ -150,6 +150,7 @@ npm and bower direct installation will available from v2.0
 | `s3-success-call`| Success Call name| Function to call after successfull upload (function will called with specified name defined in latest scope)| optional | -
 | `s3-pre-call`| Pre Call name| Function to call before file upload starts (function will called with specified name defined in latest scope)| optional | -
 | `s3-error-call`| Error Call name| Function to call after error occured on upload (function will called with specified name defined in latest scope)| optional | -
+| `s3-auto-upload`  | true or false | upload type (`true`-without upload btn , `false`- with upload btn         | optional |  - true
 
 
 
