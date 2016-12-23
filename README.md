@@ -124,7 +124,7 @@ npm and bower direct installation will available from v2.0
 
 3. Add s3-file-upload directive to the wanted element, example:
 
-* auto upload
+   * auto upload
   ```html
  <div 
      s3-file-upload="Bucket" 
@@ -142,7 +142,7 @@ npm and bower direct installation will available from v2.0
   </div>
   ```
   
- * upload with submit button
+    * upload with submit button
   ```html
  <div 
      s3-file-upload="Bucket" 
