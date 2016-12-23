@@ -178,7 +178,7 @@ Members of s3Status object contains status and others inforamation of file uploa
 
 ```
      
-* ##  Members:
+* Members:
   * `success` (true|false) - **_true_** if upload is success else **_false_**.
   * `error` (true|false) - **_true_** if any error in upload else **_false_**.
   * `uploading` (true|false) - **_true_** if the file is uploading else **_false_**.
