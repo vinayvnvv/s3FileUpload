@@ -1,5 +1,5 @@
-s3Fileupload - A Light Weight PowerFull ANGULAR Directive For Uploading a File to AMAZON S3 Server.
-===========
+# s3-file-upload
+## A Light Weight PowerFull ANGULAR Directive For Uploading a File to AMAZON S3 Server.
 
 An AngularJS directive that allows you to simply upload files directly to AWS S3.
 
