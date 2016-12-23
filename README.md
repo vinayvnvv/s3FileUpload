@@ -286,7 +286,7 @@ Members of s3Status object contains status and others inforamation of file uploa
 ## Target Name Options (`s3-target-name`)
 
   -  `s3-target-name` attribute holds the value which will override the original file name before uploading to s3 server.
-  -  Target file name attribute should not contain file extention , attributes will appends file extension automatically.
+  -  Target file name attribute should not contain file extention , because directive will appends file extension automatically.
   -  `s3-target-name` attributes also matches the special syntax for file renaming,  v1.0 supports only one syntax : `[random]`
    
    *  Ex : `s3-target-name="[random]"` - it changes name of file with a unique name by binding date+hashkey+original_ name
