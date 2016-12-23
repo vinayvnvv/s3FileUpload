@@ -137,7 +137,7 @@ npm and bower direct installation will available from v2.0
                             <input s3-file-model type="file"/>
                             <s3-progress>( {{s3Status.progressCount}} ) Progressing...</s3-progress>
                             <s3-success>SuccessFull!!, File Uploaded as '{{s3Status.fileName}}' to {{s3Status.path}}</s3-success>
-                            <s3-error><span style="color:#cc0000">Err Code: {{s3Status.errorCode}}, <br/> Err Msg: {{s3Status.errorMsg}}                                   </span></s3-error>
+                            <s3-error>Err Code: {{s3Status.errorCode}}, <br/> Err Msg: {{s3Status.errorMsg}}</s3-error>
                          </div>
   ```
 
