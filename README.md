@@ -145,7 +145,8 @@ npm and bower direct installation will available from v2.0
 | :---------------:|:-----------: | :-----:                                             |  :---:   |  :--:       
 | `s3-file-upload` | bucket name  | Root atrribute to function s3 file upload           | required |  -           
 | `s3-folder`      | Folder path  | Folder path in s3 server where file being uploaded  | required |  -           
-| `s3-access-uri`  | s3 acceess API url | api path to access s3 access details          | required |  - |
+| `s3-access-uri`  | s3 acceess API url | api path to access s3 access details          | required |  - 
+| `s3-target-name` | Target file Name | File to be upload in s3 server will changes with target-file-name attribute value| optional | -
 
 
 
