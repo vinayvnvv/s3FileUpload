@@ -187,7 +187,7 @@ Members of s3Status object contains status and others inforamation of file uploa
   * `path` (string) - final absolute path of s3 where file is to be upload (ex: `http://bucket.awshost.com/folder/filename.ext` )
   * `fileName` (string) - name of the file selected for upload
   * `targetFileName` (string) - target file name to override the original name of the file selected if specified in _s3-target-name_ attribute
-  * `file` - javascript file Object contains file related inforamtion of the selected file
+  * `file` - javascript file Object contains file related information of the selected file
   * `errMsg` - error message if any error during the file upload
   * `errCode` - error code of the error to handle custom message in call back functions
       ###### Error Codes Table
@@ -199,10 +199,8 @@ Members of s3Status object contains status and others inforamation of file uploa
       |  4        | invalid information to s3 `or` XMLHttpRequest cannot load due to unsupported `allow-origin-access`
       |  5        | Error in Request to get S3 Access information! , 
      
-  * getManualOptions - if for some reason you need to have your own mechanism of getting a policy, you can simply assign your scope variable to this option. Note it should be resolved on the moment of directive load.
-  * folder - optional, specifies a folder inside the bucket the save the file to
-  * enableValidation - optional, set to "false" in order to disable the field validation.
-  * targetFilename - An optional attribute for the target filename. if provided the file will be renamed to the provided value instead of having the file original filename.
+##Call Back Functions
+---
 
 ## Themes
 ng-s3upload allows to customize the directive template using themes. Currently the available themes are: bootstrap2, bootstrap3.
