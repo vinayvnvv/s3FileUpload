@@ -295,5 +295,5 @@ app.config(function(ngS3Config) {
 });
 ```
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/asafdav/ng-s3upload/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 
