@@ -140,6 +140,16 @@ npm and bower direct installation will available from v2.0
   </div>
   ```
 
+## Attrubutes
+| Name          | description               | type    | default | comments
+| ------------- |:-------------:            | -----:  |  true   |  cm1
+| col 3 is      | right-aligned             | $1600   |    -    |  cm2
+| col 2 is      | centered                  |   $12   |  false  |  cm3
+| zebra stripes | are neat                  |    $1   |   true  |  cm4
+
+
+
+
 attributes:
 * bucket - Specify the wanted bucket
 * s3-upload-options - Provide additional options:
