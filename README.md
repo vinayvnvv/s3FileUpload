@@ -152,7 +152,7 @@ npm and bower direct installation will available from v2.0
 | `s3-error-call`| Error Call name| Function to call after error occured on upload (function will called with specified name defined in latest scope)| optional | -
 | `s3-auto-upload`  | true or false | upload type (`true`-without upload btn , `false`- with upload btn)        | optional |  - true 
 | `s3-file-model`  | no value | must be used with child element of input[type=file],then this element will be the file holder(file model), this attribute has no value          | required |  - 
-| `s3-file-submit`  | no value | must be used with child element of any type(a, button, div) ,then this element will be the click event to submit the file (this attribute works only if `s3-auto-upload="false"`        | optional |  - 
+| `s3-file-submit`  | no value | must be used with child element of any type(a, button, div) ,then this element will be the click event to submit the file (this attribute works only if `s3-auto-upload="false"`)        | optional |  - 
 
 
 
