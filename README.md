@@ -281,7 +281,15 @@ Members of s3Status object contains status and others inforamation of file uploa
     
     ```
     
-    - Call back Functions are helpfull in many situations where we can enable the _loader_ icon at pre-call function and can disable at error-call `or` success-call functions
+    - Call back Functions are helpfull in many situations where we can enable the _loader_ icon at pre-call function and can disable at error-call `or` success-call functions 
+    
+## Target Name Options (`s3-target-name`)
+
+  -  `s3-target-name` attribute holds the value which will override the original file name before uploading to s3 server.
+  -  `s3-target-name` attributes also matches the special syntax for file renaming. v1.0 supports only one syntax : `[random]`
+    Ex : `s3-target-name="[random]"` - it changes name of file with a unique name by binding date-haskkey-original_ name
+    format: `4352837464-dhis2300ff4jekf34rhei-original_filename.png`
+    
 
 
 ## Themes
