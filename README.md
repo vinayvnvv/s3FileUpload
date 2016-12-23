@@ -123,6 +123,8 @@ npm and bower direct installation will available from v2.0
   ```
 
 3. Add s3-file-upload directive to the wanted element, example:
+
+* auto upload
   ```html
  <div 
      s3-file-upload="Bucket" 
@@ -139,6 +141,27 @@ npm and bower direct installation will available from v2.0
        <s3-error>Error!</s3-error> <!-- this block Visible when error in file upload -->
   </div>
   ```
+  
+  * upload with submit button
+  ```html
+ <div 
+     s3-file-upload="Bucket" 
+     s3-folder="folder1/folder2" 
+     s3-access-uri="/api/s3_access.json" 
+     s3-pre-call="beforeUpload"
+     s3-error-call="errorUpload"
+     s3-succes-call="sucessUpload"
+     s3-auto-upload="true" >
+     <!-- Child elements  -->
+       <input s3-file-model type="file"/> <!-- input File Holder -->
+       <input s3-file-submit type="button" value="Upload"> <!-- Button Holds the click event for upload starts -->
+       <s3-progress>Progressing...</s3-progress> <!-- this block Visible when file is uploading -->
+       <s3-success>SuccessFull!!</s3-success> <!-- this block Visible when file upload is success -->
+       <s3-error>Error!</s3-error> <!-- this block Visible when error in file upload -->
+  </div>
+  ```
+  
+  
 
 ## API and Attributes
 | Name             | value        | description                                         | type     | default     
@@ -294,20 +317,6 @@ Members of s3Status object contains status and others inforamation of file uploa
    
     sample :  `original_filename` **to** `4352837464-dhis2300ff4jekf34rhei-original_filename.png`
     
-
-
-## Themes
-ng-s3upload allows to customize the directive template using themes. Currently the available themes are: bootstrap2, bootstrap3.
-You can also use your own template (if so, the provided path must start with a `/`).
-
-#### How to?
-
-```javascript
-app.config(function(ngS3Config) {
-  ngS3Config.theme = 'bootstrap3';
-  ngS3Config.theme = '/path/to/custom/theme.html';
-});
-```
 
 
 
