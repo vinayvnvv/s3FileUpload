@@ -328,7 +328,7 @@ Members of s3Status object contains status and others inforamation of file uploa
   |Developer profile 
   | ---                
   |   ![alt text](https://avatars2.githubusercontent.com/u/24405794?v=3&s=100) 
-  |Name : Vinay Shanubhag
+  |Name : Vinay Shanubhag [website](http://vinaybv.6te.net)
   | email: tech.vinaybv@gmail.com
   |twitter: [Vinay](https://twitter.com/Vinayvnvv)
   |linkedIn: [Vinay](https://www.linkedin.com/in/vinay-shanubhag-7bb60b39)
