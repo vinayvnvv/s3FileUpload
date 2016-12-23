@@ -124,21 +124,20 @@ npm and bower direct installation will available from v2.0
 
 3. Add s3-file-upload directive to the wanted element, example:
   ```html
-                         <div 
-                             s3-file-upload="Bucket" 
-                             s3-folder="folder1/folder2" 
-                             s3-access-uri="/api/s3_access.json" 
-                             s3-pre-call="beforeUpload"
-                             s3-error-call="errorUpload"
-                             s3-succes-call="sucessUpload"
-                             s3-auto-upload="true"
-                              >
-                            <!-- Child elements  -->
-                            <input s3-file-model type="file"/> <!-- input File Holder -->
-                            <s3-progress>( {{s3Status.progressCount}} ) Progressing...</s3-progress> <!-- this block Visible when file is uploading -->
-                            <s3-success>SuccessFull!!, File Uploaded as '{{s3Status.fileName}}' to {{s3Status.path}}</s3-success> <!-- this block Visible when file upload is success -->
-                            <s3-error>Err Code: {{s3Status.errorCode}}, <br/> Err Msg: {{s3Status.errorMsg}}</s3-error> <!-- this block Visible when error in file upload -->
-                         </div>
+ <div 
+     s3-file-upload="Bucket" 
+     s3-folder="folder1/folder2" 
+     s3-access-uri="/api/s3_access.json" 
+     s3-pre-call="beforeUpload"
+     s3-error-call="errorUpload"
+     s3-succes-call="sucessUpload"
+     s3-auto-upload="true" >
+     <!-- Child elements  -->
+       <input s3-file-model type="file"/> <!-- input File Holder -->
+       <s3-progress>( {{s3Status.progressCount}} ) Progressing...</s3-progress> <!-- this block Visible when file is uploading -->
+       <s3-success>SuccessFull!!, File Uploaded as '{{s3Status.fileName}}' to {{s3Status.path}}</s3-success> <!-- this block Visible when file upload is success -->
+       <s3-error>Err Code: {{s3Status.errorCode}}, <br/> Err Msg: {{s3Status.errorMsg}}</s3-error> <!-- this block Visible when error in file upload -->
+  </div>
   ```
 
 attributes:
