@@ -116,7 +116,7 @@ npm and bower direct installation will available from v2.0
 ## Usage
 1. Add `s3-file-upload.js` or `s3-file-upload.min.js` to your main file (index.html) (__min js file available in s3src folder__)
    ```html
-     <script type="text/javascript" src="s3src/s3-file-upload.min.js"></script>
+     <script type="text/javascript" src="s3-file-upload.min.js"></script>
    ```  
 
 
