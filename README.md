@@ -209,6 +209,16 @@ Members of s3Status object contains status and others inforamation of file uploa
       
        - correct method : `s3-success-call="successHandler"` ( ✔ ) .
        - wrong method : ~~s3-success-call="successHandler()~~"   ( × )
+   * even call back functions does not expecting any arguments from attribute value , s3Upload directive will automatically  passes usefull arguments and can use while it defining on latest scope
+   ### Call back functions Parameters
+      | call-back-function | arguments passed (auto)
+      | ---                | --- 
+      |  `s3-pre-call`     | _function_(s3Status)
+      |  `s3-success-call `| _function_(xhr, s3Status)
+      |  `s3-error-call`   | _function_(xhr, s3Status)
+      
+      - xhr : XMLHttpRequest Object to S3 Server
+      - s3Status : s3Status Object
 
 
 ## Themes
