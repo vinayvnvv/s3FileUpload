@@ -281,7 +281,7 @@ Members of s3Status object contains status and others inforamation of file uploa
     
     ```
     
-    - Call back Functions are helpfull in many situations where we can enable the _loader_ icon at pre-call function and can disable at error-call `or` success-call
+    - Call back Functions are helpfull in many situations where we can enable the _loader_ icon at pre-call function and can disable at error-call `or` success-call functions
 
 
 ## Themes
