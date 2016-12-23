@@ -197,10 +197,12 @@ Members of s3Status object contains status and others inforamation of file uploa
       |  2        | folder is undefined
       |  3        | s3-access-uri is undefined
       |  4        | invalid information to s3 `or` XMLHttpRequest cannot load due to unsupported `allow-origin-access`
-      |  5        | Error in Request to get S3 Access information! , 
+      |  5        | Error in Request to get S3 Access information! 
 
----     
-##Call Back Functions
+
+
+
+## Call Back Functions
 
 
 ## Themes
