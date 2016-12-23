@@ -1,11 +1,11 @@
 var module =  angular.module('s3FileUpload', [])
-  .directive('s3FileUpload',function($parse, $q, $http) {
+  .directive('s3FileUpload',['$parse', '$q', '$http' , function($parse, $q, $http) {
                return {
                     restrict : "A",
                     scope : true,
-                    controller: function($scope, $element, $attrs, $transclude) {
+                    controller: ['$scope', '$element', '$attrs', '$transclude' , function($scope, $element, $attrs, $transclude) {
 
-                    	//console.log("controller called of directive")
+                      //console.log("controller called of directive")
 
                         //status vars 
                         $scope.s3Status = {
@@ -182,7 +182,7 @@ var module =  angular.module('s3FileUpload', [])
                                 success(function (response, status) {
                                   deferred.resolve(response);
                                 }).error(function (error, status) {
-                                	deferred.reject(error);
+                                  deferred.reject(error);
 
                                 $scope.completeSelecter.css({'display': 'none'});
                                 $scope.progressSelecter.css({'display': 'none'});
@@ -234,7 +234,7 @@ var module =  angular.module('s3FileUpload', [])
                                     };
 
 
-                    } ,
+                    }] ,
                     link: function (scope, el, attrs) {
                         var s3Info = {
                             uri: 'https://' + attrs.s3FileUpload + '.s3.amazonaws.com/',
@@ -255,7 +255,7 @@ var module =  angular.module('s3FileUpload', [])
                         for(var i=0;i<chil.length;i++) {
                             var child_check = angular.element(chil[i].attributes);
                             for(var j=0;j<child_check.length;j++) {
-                            	var _e = angular.element(child_check[j]);
+                              var _e = angular.element(child_check[j]);
                                 if( (_e[0].name) == 's3-file-model')
                                  _fileSelecter = angular.element(chil[i]);
                                 if((_e[0].name) == 's3-file-submit')
@@ -282,17 +282,19 @@ var module =  angular.module('s3FileUpload', [])
                             scope.$apply;
                         });
 
-                        _submitSelecter.bind('click', function(event) {
-                            if(!autoUpload) {
-                            	if(_fileSelecter[0].files[0] == undefined) {
-                                    scope.setErrorObj(6, "No files is Selected, Please Select a file before upload!")
-                            	} else {
-                            		startTask();
-                            	}
-                            }
-                            _fileSelecter[0].files[0] = null;
-                            scope.$apply;
-                        });
+                        if(!autoUpload) {
+                              _submitSelecter.bind('click', function(event) {
+                                if(!autoUpload) {
+                                  if(_fileSelecter[0].files[0] == undefined) {
+                                        scope.setErrorObj(6, "No files is Selected, Please Select a file before upload!")
+                                  } else {
+                                    startTask();
+                                  }
+                                }
+                                _fileSelecter[0].files[0] = null;
+                                scope.$apply;
+                            });
+                        }
 
                         function startTask() {
 
@@ -366,4 +368,4 @@ var module =  angular.module('s3FileUpload', [])
                 }
 
             }    
-  });
+  }]);
