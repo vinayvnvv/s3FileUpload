@@ -106,33 +106,39 @@ Here's a rails example, even if you're not a rails developer, read the code, it'
 ## How to get it ?
 
 #### Manual Download
-Download the from [here](https://github.com/asafdav/ng-s3upload/releases)
+Download Zip from [here](https://github.com/vinayvnvv/s3FileUpload/releases) (v1.0)
 
-#### Bower
 ```
-bower install ng-s3upload
-```
-
-#### Npm
-```
-npm install ng-s3upload
+npm and bower direct installation will available from v2.0
 ```
 
 
 ## Usage
-1. Add ng-s3upload.min.js to your main file (index.html)
+1. Add s3-file-upload.js or s3-file-upload.min.js to your main file (index.html)
 
-2. If you have not already done so, include [ngSanitize]( http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.js) in your application.
 
-3. Set `ngS3upload` as a dependency in your module
+2. Set `s3FileUpload` as a dependency in your module
   ```javascript
-  var myapp = angular.module('myapp', ['ngS3upload'])
+  var myapp = angular.module('myapp', ['s3FileUpload'])
   ```
 
-4. Add s3-upload directive to the wanted element, example:
+3. Add s3-file-upload directive to the wanted element, example:
   ```html
-  <div s3-upload bucket="s3Bucket" ng-model="product.remote_product_file_url"
-     s3-upload-options="{getOptionsUri: s3OptionsUri, folder: 'images/'}">
+                         <div 
+                             s3-file-upload="Bucket" 
+                             s3-folder="folder1/folder2" 
+                             s3-access-uri="/api/s3_access.json" 
+                             s3-pre-call="beforeUpload"
+                             s3-error-call="errorUpload"
+                             s3-succes-call="sucessUpload"
+                             s3-auto-upload="true"
+                              >
+                            
+                            <input s3-file-model type="file"/>
+                            <s3-progress>( {{s3Status.progressCount}} ) Progressing...</s3-progress>
+                            <s3-success>SuccessFull!!, File Uploaded as '{{s3Status.fileName}}' to {{s3Status.path}}</s3-success>
+                            <s3-error><span style="color:#cc0000">Err Code: {{s3Status.errorCode}}, <br/> Err Msg: {{s3Status.errorMsg}}                                   </span></s3-error>
+                         </div>
   ```
 
 attributes:
