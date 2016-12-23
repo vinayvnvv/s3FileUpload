@@ -114,7 +114,7 @@ npm and bower direct installation will available from v2.0
 
 
 ## Usage
-1. Add s3-file-upload.js or s3-file-upload.min.js to your main file (index.html)
+1. Add s3-file-upload.js or s3-file-upload.min.js to your main file (index.html) (min js file available in s3src folder)
 
 
 2. Set `s3FileUpload` as a dependency in your module
@@ -180,7 +180,7 @@ npm and bower direct installation will available from v2.0
 
 
 
-## s3Status Object (contains information of s3 upload
+## s3Status Object (contains information of s3 upload )
 Members of s3Status object contains status and others inforamation of file upload provided by the directive and accessible inside the `s3-file-upload` scope.
 
 ```javascript
