@@ -157,8 +157,26 @@ npm and bower direct installation will available from v2.0
 
 
 
-attributes:
-* bucket - Specify the wanted bucket
+## s3Status Object (contains information of s3 upload)
+###### members of s3Status object contains status and others inforamation of file upload
+```json
+    {
+      success : false,
+      error : false,
+      uploading : false,
+      uploaded : false,
+      progressCount : 0,
+      path : null,
+      fileName : null,
+      targetFileName : null,
+      file: null,
+      errorMsg: null,
+      errorCode:null
+    }
+
+
+```
+     
 * s3-upload-options - Provide additional options:
   * getOptionsUri - The uri of the server service that is needed to sign the request (mentioned in section Setup#4) - Required if second option is empty.
   * getManualOptions - if for some reason you need to have your own mechanism of getting a policy, you can simply assign your scope variable to this option. Note it should be resolved on the moment of directive load.
