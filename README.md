@@ -320,6 +320,8 @@ Members of s3Status object contains status and others inforamation of file uploa
 
  ### Happy Coding..
  
+ ---
+ 
   |Developer profile 
   | ---                
   |   ![alt text](https://avatars2.githubusercontent.com/u/24405794?v=3&s=100) 
