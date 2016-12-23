@@ -141,11 +141,11 @@ npm and bower direct installation will available from v2.0
   ```
 
 ## Attributes
-| Name          | value | description               | type    | default | comments
-| :------------- |:-------------:            | :-----:  |  :---:   |  :--: | :--:
-| s3-file-upload| bucket name | Root atrribute to function s3 file upload           | required   |  undefined   |  cm2
-| col 2 is      | centered                  |   $12   |  false  |  cm3 |
-| zebra stripes | are neat                  |    $1   |   true  |  cm4 |
+| Name           | value        | description                                         | type     | default      | comments
+| :------------- |:-----------: | :-----:                                             |  :---:   |  :--:        | :--:
+| s3-file-upload | bucket name  | Root atrribute to function s3 file upload           | required |  -           |  -
+| s3-folder      | Folder path  | Folder path in s3 server where file being uploaded  | required |  -           |  -
+| zebra stripes  | are neat                  |    $1   |   true  |  cm4 |
 
 
 
