@@ -310,6 +310,26 @@ Members of s3Status object contains status and others inforamation of file uploa
     
     - Call back Functions are helpfull in many situations where we can enable the _loader_ icon at pre-call function and can disable at error-call `or` success-call functions 
     
+## Dynamic path Upload 
+
+ - You can upload with applying dynamic information ( folder name, bucket name, target file name ) with **Angular Two-way** Data-binding.
+ - Example :
+    ```html
+       <div 
+         s3-file-upload="{{bucket_name}}" 
+         s3-folder="folder1/{{subfolder_name}}" 
+         s3-access-uri="{{s3_access_api_uri}}" 
+         s3-pre-call="s3PreCall"
+         s3-error-call="s3SuccessCall"
+         s3-succes-call="s3ErrorCall"
+         s3-target-name="{{target_name}}">
+         <!-- Child elements  -->
+           <input s3-file-model type="file"/> <!-- input File Holder -->
+      </div>
+    
+    
+    ```
+ 
 ## Target Name Options (`s3-target-name`)
 
   -  `s3-target-name` attribute holds the value which will override the original file name before uploading to s3 server.
