@@ -330,6 +330,24 @@ Members of s3Status object contains status and others inforamation of file uploa
     
     ```
     * `{{var}}` - replace with the value defined in the latest scope.
+     
+      ```html
+       Enter Folder path to upload: <input type="text" ng-model="folder_name"/>
+       
+        <div 
+         s3-file-upload="myBucket" 
+         s3-folder="{{folder_name}}" 
+         s3-access-uri="api/s3_access.json" 
+         s3-pre-call="s3PreCall"
+         s3-error-call="s3SuccessCall"
+         s3-succes-call="s3ErrorCall">
+         <!-- Child elements  -->
+           <input s3-file-model type="file"/> <!-- input File Holder -->
+      </div>
+      
+      ```
+  
+  - Example 2 : **Upload file to a folder specified in the input by user
  
 ## Target Name Options (`s3-target-name`)
 
