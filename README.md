@@ -310,7 +310,7 @@ Members of s3Status object contains status and others inforamation of file uploa
     
     - Call back Functions are helpfull in many situations where we can enable the _loader_ icon at pre-call function and can disable at error-call `or` success-call functions 
     
-## Dynamic path Upload 
+## Upload with Dynamic Information 
 
  - You can upload with applying dynamic information ( folder name, bucket name, target file name ) with **Angular Two-way** Data-binding.
  - Example :
@@ -329,6 +329,7 @@ Members of s3Status object contains status and others inforamation of file uploa
     
     
     ```
+    * `{{var}}` - replace with the value defined in the latest scope.
  
 ## Target Name Options (`s3-target-name`)
 
