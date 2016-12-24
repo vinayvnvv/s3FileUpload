@@ -331,7 +331,8 @@ Members of s3Status object contains status and others inforamation of file uploa
     ```
     * `{{var}}` - replace with the value defined in the latest scope.
     
-   - Example 2 : **Upload file to a folder specified in the input by user**  
+    
+ - Example 2 : **Upload file to a folder specified in the input by user**  
      
       ```html
        Enter Folder path to upload: <input type="text" ng-model="folder_name"/>
