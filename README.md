@@ -65,7 +65,7 @@ YYY - HMAC and sha of your private key
 ZZZ - Your public key
 Here's a rails example, even if you're not a rails developer, read the code, it's very straight forward.
 
-  For a php example, please refer to [this guide](https://github.com/asafdav/ng-s3upload/wiki/PHP-Creating-the-S3-Policy).
+  For a php example, please refer to [this guide](https://github.com/vinayvnvv/s3FileUpload/blob/master/PHP_server_guide.md).
   ```ruby
       def s3_access_token
         render json: {
