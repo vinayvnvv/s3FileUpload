@@ -252,7 +252,6 @@ Members of s3Status object contains status and others inforamation of file uploa
   #### Example 
   
     `app.html`
-    
     ```html
     <body ng-app="myApp" ng-controller="myController">
          <div 
@@ -270,7 +269,7 @@ Members of s3Status object contains status and others inforamation of file uploa
            <s3-success>SuccessFull!!</s3-success> <!-- this block Visible when file upload is success -->
            <s3-error>Error!</s3-error> <!-- this block Visible when error in file upload -->
       </div>
-  </body>
+     </body>
      ```
     
     `app.js`
@@ -327,8 +326,6 @@ Members of s3Status object contains status and others inforamation of file uploa
          <!-- Child elements  -->
            <input s3-file-model type="file"/> <!-- input File Holder -->
       </div>
-    
-    
     ```
     * `{{var}}` - replace with the value defined in the latest scope.
     
