@@ -246,71 +246,71 @@ Members of s3Status object contains status and others inforamation of file uploa
   |  `s3-error-call`   | _function_(xhr, s3Status)
       
       
-      - xhr : XMLHttpRequest Object to S3 Server
-      - s3Status : s3Status Object
+- xhr : XMLHttpRequest Object to S3 Server
+- s3Status : s3Status Object
       
       
      
   #### Example 
   
-`app.html`
-    ```html
-    <body ng-app="myApp" ng-controller="myController">
-         <div 
-         s3-file-upload="Bucket" 
-         s3-folder="folder1/folder2" 
-         s3-access-uri="/api/s3_access.json" 
-         s3-pre-call="s3PreCall"
-         s3-error-call="s3SuccessCall"
-         s3-succes-call="s3ErrorCall"
-         s3-auto-upload="true"
-         s3-target-name="mynewName">
-         <!-- Child elements  -->
-           <input s3-file-model type="file"/> <!-- input File Holder -->
-           <s3-progress>Progressing...</s3-progress> <!-- this block Visible when file is uploading -->
-           <s3-success>SuccessFull!!</s3-success> <!-- this block Visible when file upload is success -->
-           <s3-error>Error!</s3-error> <!-- this block Visible when error in file upload -->
-      </div>
-     </body>
-     ```
+  `app.html`
+      ```html
+        <body ng-app="myApp" ng-controller="myController">
+           <div 
+           s3-file-upload="Bucket" 
+           s3-folder="folder1/folder2" 
+           s3-access-uri="/api/s3_access.json" 
+           s3-pre-call="s3PreCall"
+           s3-error-call="s3SuccessCall"
+           s3-succes-call="s3ErrorCall"
+           s3-auto-upload="true"
+           s3-target-name="mynewName">
+           <!-- Child elements  -->
+             <input s3-file-model type="file"/> <!-- input File Holder -->
+             <s3-progress>Progressing...</s3-progress> <!-- this block Visible when file is uploading -->
+             <s3-success>SuccessFull!!</s3-success> <!-- this block Visible when file upload is success -->
+             <s3-error>Error!</s3-error> <!-- this block Visible when error in file upload -->
+           </div>
+       </body>
+       ```
     
-app.js`
+`app.js`
    
 ```javascript
-    var app = angular.module("myApp", ['s3FileUpload']); // inject s3-directive dependency  
-    // define call-back function inside the controller where you use the directive
-    app.controller("myController", function($scope) {
-      
-      // define Pre call (function should be defined with scope keyword and with the same name as mentioned in s3-pre-call attribute
-      $scope.s3PreCall = function(s3Status) 
-      
-         console.log(s3Status); // log current s3Status object to browser console
-      
-      };
-      
-      // define Success call (function should be defined with scope keyword and with the same name as mentioned in s3-success-call attribute
-      $scope.s3SuccessCall = function(xhr, s3Status) 
 
-         console.log(s3Status); // log current s3Status object to browser console
-      
-      };
-      
-      // define Error call (function should be defined with scope keyword and with the same name as mentioned in s3-error-call attribute
-      $scope.s3ErrorCall = function(xhr, s3Status) 
-      
-         console.log(s3Status); // log current s3Status object to browser console
-      
-      };
-    
-    });
-    
+         var app = angular.module("myApp", ['s3FileUpload']); // inject s3-directive dependency  
+      // define call-back function inside the controller where you use the directive
+      app.controller("myController", function($scope) {
+
+        // define Pre call (function should be defined with scope keyword and with the same name as mentioned in s3-pre-call attribute
+        $scope.s3PreCall = function(s3Status) 
+
+           console.log(s3Status); // log current s3Status object to browser console
+
+        };
+
+        // define Success call (function should be defined with scope keyword and with the same name as mentioned in s3-success-call attribute
+        $scope.s3SuccessCall = function(xhr, s3Status) 
+
+           console.log(s3Status); // log current s3Status object to browser console
+
+        };
+
+        // define Error call (function should be defined with scope keyword and with the same name as mentioned in s3-error-call attribute
+        $scope.s3ErrorCall = function(xhr, s3Status) 
+
+           console.log(s3Status); // log current s3Status object to browser console
+
+        };
+
+      });
+
+
 ```
    
    
    
-   
-   
-    - Call back Functions are helpfull in many situations where we can enable the _loader_ icon at pre-call function and can disable at error-call `or` success-call functions 
+- Call back Functions are helpfull in many situations where we can enable the _loader_ icon at pre-call function and can disable at error-call `or` success-call functions 
     
 ## Upload with Dynamic Information 
 
