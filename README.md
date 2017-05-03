@@ -252,9 +252,9 @@ Members of s3Status object contains status and others inforamation of file uploa
       
      
   #### Example 
-  
-  `app.html`
-      ```html
+`app.html`
+
+```html
         <body ng-app="myApp" ng-controller="myController">
            <div 
            s3-file-upload="Bucket" 
@@ -272,7 +272,7 @@ Members of s3Status object contains status and others inforamation of file uploa
              <s3-error>Error!</s3-error> <!-- this block Visible when error in file upload -->
            </div>
        </body>
-       ```
+```
     
 `app.js`
    
