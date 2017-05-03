@@ -233,7 +233,7 @@ Members of s3Status object contains status and others inforamation of file uploa
    * call back functions will automatically called to the latest **Angular** scope of the controller.
    * call back functions should be called without any arguments . 
       
-       - correct method : `s3-success-call="successHandler"` ( ✔ ) .
+       - correct method : s3-success-call="successHandler" ( ✔ ) .
        - wrong method : ~~s3-success-call="successHandler()~~"   ( × )
    * even call back functions does not expecting any arguments from attribute value , s3Upload directive will automatically  passes usefull arguments and can use while it defining on latest scope
    
@@ -246,8 +246,8 @@ Members of s3Status object contains status and others inforamation of file uploa
   |  `s3-error-call`   | _function_(xhr, s3Status)
       
       
-     - `xhr : XMLHttpRequest Object to S3 Server`
-     - `s3Status : s3Status Object`
+     - xhr : XMLHttpRequest Object to S3 Server
+     - s3Status : s3Status Object
      
   #### Example 
   
@@ -271,8 +271,7 @@ Members of s3Status object contains status and others inforamation of file uploa
            <s3-error>Error!</s3-error> <!-- this block Visible when error in file upload -->
       </div>
   </body>
-    
-    ```
+     ```
     
     `app.js`
     
@@ -314,6 +313,8 @@ Members of s3Status object contains status and others inforamation of file uploa
 
  - You can upload with applying dynamic information ( folder name, bucket name, target file name ) with **Angular Two-way** Data-binding.
  - Example :
+ 
+ 
     ```html
        <div 
          s3-file-upload="{{bucket_name}}" 
