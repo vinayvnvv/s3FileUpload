@@ -246,12 +246,14 @@ Members of s3Status object contains status and others inforamation of file uploa
   |  `s3-error-call`   | _function_(xhr, s3Status)
       
       
-     - xhr : XMLHttpRequest Object to S3 Server
-     - s3Status : s3Status Object
+      - xhr : XMLHttpRequest Object to S3 Server
+      - s3Status : s3Status Object
+      
+      
      
   #### Example 
   
-    `app.html`
+`app.html`
     ```html
     <body ng-app="myApp" ng-controller="myController">
          <div 
@@ -272,11 +274,9 @@ Members of s3Status object contains status and others inforamation of file uploa
      </body>
      ```
     
-    `app.js`
-    
-    
-    
-    ```javascript
+app.js`
+   
+```javascript
     var app = angular.module("myApp", ['s3FileUpload']); // inject s3-directive dependency  
     // define call-back function inside the controller where you use the directive
     app.controller("myController", function($scope) {
@@ -304,8 +304,12 @@ Members of s3Status object contains status and others inforamation of file uploa
     
     });
     
-    ```
-    
+```
+   
+   
+   
+   
+   
     - Call back Functions are helpfull in many situations where we can enable the _loader_ icon at pre-call function and can disable at error-call `or` success-call functions 
     
 ## Upload with Dynamic Information 
