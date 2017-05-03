@@ -360,10 +360,8 @@ Members of s3Status object contains status and others inforamation of file uploa
   -  Target file name attribute should not contain file extention , because directive will appends file extension automatically.
   -  `s3-target-name` attributes also matches the special syntax for file renaming,  v1.0 supports only one syntax : `[random]`
    
-   *  Ex : `s3-target-name="[random]"` - it changes name of file with a unique name by binding date+hashkey+original_ name
-   
-   
-    sample :  `original_filename` **to** `4352837464-dhis2300ff4jekf34rhei-original_filename.png`
+*  Ex : `s3-target-name="[random]"` - it changes name of file with a unique name by binding date+hashkey+original_ name
+sample :  `original_filename` **to** `4352837464-dhis2300ff4jekf34rhei-original_filename.png`
     
 
  ### Happy Coding..
